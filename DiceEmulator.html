@@ -1,0 +1,44 @@
+<!-- This is a page for generating a random number that can emulate a dice roll, spinner, etc. -->
+<html>
+<head>
+<title>Dice/Spinner Emulator</title>
+
+<script src="DiceEmulator.js"></script>
+<style>
+f1 {
+    font-size: 200px;
+}
+</style>
+</head>
+
+<body>
+<h2> Generate a Random Number</h2>
+
+Enter the number range and click "Generate". <br>
+(To mimic a dice roll, the low number should be 1 and the high number should be 6.)<br><br>
+
+<table>
+<tr>
+    <td>Lowest Number: &nbsp  </td>
+    <td><input type="number" id="LowNumber" value=1></td>
+</tr>
+<tr>
+    <td>Highest Number: &nbsp  </td>
+    <td><input type="number" id="HighNumber" value=6></td>
+</tr>
+</table>
+<br>
+
+<button type="button" id="Generate" onclick="Emulator()">Generate</button> 
+<br>
+
+<table>
+<tr>
+    <td><f1><div id="Result"> <!-- result goes here. --> </div></f1></td>
+</tr>
+</table>
+
+</body>
+
+
+</html>
